@@ -66,12 +66,7 @@ function geoFindMe() {
     const data = new FormData(get_weather_form);
     const formDataObj = {};
     data.forEach((value, key) => (formDataObj[key] = value));
-
-    console.log(formDataObj);
-
     const form_action = get_weather_form.getAttribute('action');
-
-
     const options = { 
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
