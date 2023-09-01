@@ -15,9 +15,17 @@
     background-color: var(--barely-gray);
     height: 100%;
     font-family: sans-serif;
-  } 
+  }
+  
+  .main{
+    padding: 1rem;
+  }
 
   .size30x30{
     width: 30px;
     height: 30px;
+  }
+
+  .fw_125{
+    width: 125px;
   }
