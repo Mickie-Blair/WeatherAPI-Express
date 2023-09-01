@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+  }
+
+  body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    overflow-y: hidden;
+  }
+  
+  body{ 
+    display: flex;
+    flex-direction: column;  
+    background-color: var(--barely-gray);
+    height: 100%;
+    font-family: sans-serif;
+  } 
+
+  .size30x30{
+    width: 30px;
+    height: 30px;
+  }
