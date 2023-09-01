@@ -40,11 +40,6 @@ app.post('/get-weather', async (req, res) => {
     
     let latitude = req.body['latitude'];
     let longitude = req.body['longitude'];
-    console.log('get weather', latitude, longitude);
-
-    console.log(req.body)
-
-
     try {
         let api_url = "https://api.openweathermap.org/data/2.5/weather";
         const result = await axios.get(api_url, {
