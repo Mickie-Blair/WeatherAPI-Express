@@ -6,7 +6,95 @@
     <body>
         <%- include('../partials/header.ejs'); %>
         <div class="main">
-        
+            <button id="find-me">Show my location</button><br />
+            <p id="status"></p>
+
+            <div class="d-flex gap-3 d-none" id="openstreetmap">
+                <div class="fw-bold fw_125">
+                    Openstreetmap:
+                </div>
+                <div>
+                    <a id="map-link" target="_blank"></a>
+                </div>
+                
+            </div>
+            
+
+            <div class="py-3">
+                <div class="d-flex gap-3">
+                    <div class="fw-bold fw_125">
+                        Latitude:
+                    </div>
+                    <div id="latitude">
+                        N/A
+                    </div>
+                </div>
+
+                <div class="d-flex gap-3">
+                    <div class="fw-bold fw_125">
+                        Longitude:
+                    </div>
+                    <div id="longitude">
+                        N/A
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-none" id="weather">
+
+                <div id="form_div">
+                    <form action="/get-weather" method="GET" id="get_weather_form">
+                        <div class="d-none">
+                            <label>Latitude</label>
+                            <input type="text" name="latitude"/>                    
+                            <label>Longitude</label>
+                            <input type="text" name="longitude"/>
+                        </div>
+                        <input type="submit" name="get-weather" value="Get Weather" />
+                    </form>
+                </div>
+
+                <div class="d-none" id="results">
+                    <div class="d-flex gap-3">
+                        <div class="fw-bold fw_125">
+                            Location:
+                        </div>
+                        <div id="location">
+                            N/A
+                        </div>
+                    </div>
+                    <div class="d-flex gap-3">
+                        <div class="fw-bold fw_125">
+                            Temperature:
+                        </div>
+                        <div id="temp">
+                            N/A
+                        </div>
+                    </div>
+                    <div class="d-flex gap-3">
+                        <div class="fw-bold fw_125">
+                            Conditions:
+                        </div>
+                        <div id="conditions">
+                            N/A
+                        </div>
+                    </div>
+
+                    <div class="d-flex gap-3">
+                        <div class="fw-bold fw_125">
+                            Icon:
+                        </div>
+                        <div id="icon">
+                            N/A
+                        </div>
+                    </div>
+
+                   
+                </div>
+
+                
+             
+            </div>
         </div>
         <%- include("../partials/footer.ejs")%>
     </body>
