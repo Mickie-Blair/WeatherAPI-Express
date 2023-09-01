@@ -1,2 +1,2 @@
 # WeatherAPI-Express
-Express Application using WeatherAPI.com to display weather
+Express Application using OpenWeatherMap to display weather
